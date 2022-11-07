@@ -1,0 +1,268 @@
+@import url("https://fonts.googleapis.com/css2?family=Skranji&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mukta&display=swap");
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+  background-color: white;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+.left {
+  width: 40%;
+  /* border: 2px solid black; */
+  position: relative;
+}
+
+.right {
+  width: 60%;
+  /* border: 2px solid black; */
+}
+
+.mask {
+  height: 18%;
+  width: 100%;
+  position: absolute;
+  top: 25%;
+  background-color: rgba(0, 0, 0, 0.508);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.left > img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.odin-logo {
+  object-fit: cover;
+  height: 85%;
+}
+
+.odin-title {
+  font-size: 7em;
+  font-family: Skranji;
+  color: white;
+}
+
+.content {
+  height: 100vh;
+  margin-left: 4em;
+  margin-right: 18%;
+}
+
+.lead-text {
+  padding-top: 20%;
+  width: min(110ch, 70%);
+  margin-bottom: 10%;
+}
+
+p {
+  font-weight: 550;
+  font-family: Mukta;
+  font-size: 2em;
+}
+
+.form {
+  margin-top: 1.5em;
+  font-family: Mukta;
+  display: flex;
+  flex-direction: row;
+  gap: 100px;
+}
+
+.form > p {
+  margin-bottom: 1em;
+}
+
+label,
+input {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+hr {
+  margin-left: -4em;
+  width: 100vw;
+  border: 1px solid rgba(0, 0, 0, 0.156);
+}
+
+button {
+  width: 25%;
+  height: 50px;
+  background-color: rgba(38, 67, 38, 0.754);
+  border-radius: 5px;
+  color: white;
+  font-size: large;
+  font-family: Mukta;
+  font-weight: bold;
+  padding: 0;
+  border: none;
+  margin-bottom: 5%;
+}
+
+button:hover {
+  background-color: rgba(66, 112, 66, 0.754);
+  cursor: pointer;
+}
+
+.acc-button > p {
+  font-size: 1.2em;
+}
+
+.acc-button > p > span {
+  color: rgba(38, 67, 38, 0.754);
+}
+
+.left-form,
+.right-form {
+  width: 30%;
+}
+
+input {
+  height: 25px;
+  margin-bottom: 3em;
+  font-size: 1.5em;
+  padding: 5px;
+}
+
+input:focus {
+  border: 2px solid #6872e0;
+  outline: none;
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px rgba(35, 35, 35, 0.37);
+}
+
+.acc-button {
+  padding-top: 5%;
+}
