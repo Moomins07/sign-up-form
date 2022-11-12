@@ -37,6 +37,9 @@
           </div>
           <p>Let's do this!</p>
           <div class="form">
+
+            <!-- container top -->
+            <div class="container-top">
             <div class="left-form">
               <form action="" method="get" class="sign-up-form">
                 <div class="first-name">
@@ -66,6 +69,8 @@
                     id="password"
                     required
                     error
+                    minlength="5"
+                    onChange="onChange()"
                   />
                 </div>
               </form>
@@ -81,25 +86,32 @@
                   <label for="number">PHONE NUMBER</label>
                   <input type="number" name="number" id="number" required />
                 </div>
-                <div class="confirm_password">
+                <div class="password">
                   <label for="confirm_password">CONFIRM PASSWORD</label>
                   <input
                     type="password"
                     name="password"
                     id="confirm_password"
                     required
+                    minlength="5"
+                    onChange="onChange()"
                   />
                 </div>
+              </div>
+            </div>
+
+            <div class="container-bottom">
+              <hr />
+              <div class="acc-button">
+                <button>Create Account</button>
+                <p>Already have an account? <span>Log in</span></p>
+              </div>
               </form>
             </div>
-          </div>
-          <hr />
-          <div class="acc-button">
-            <button>Create Account</button>
-            <p>Already have an account? <span>Log in</span></p>
           </div>
         </div>
       </div>
     </main>
+    <script src="script.js"></script>
   </body>
 </html>
